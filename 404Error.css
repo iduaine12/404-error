@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3C2064;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container, .nav-lists, .search-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 10;
+}
+
+.logo {
+    width: 50px;
+    margin: 0 5px 0 0;
+}
+
+.logo-title {
+    font-size: 3.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo, .search-icon {
+    filter: invert(1);
+}
+
+nav {
+    flex: 8;
+}
+
+.nav-lists {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-list {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all ease-in-out 200ms;
+}
+
+.nav-list:hover {
+    background: #E8308C;
+    padding: 5px 20px;
+}
+
+.search-container {
+    flex: 1;
+}
+
+.search-icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+main {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-descr {
+    flex: 1;
+}
+
+
+
+.error-title {
+    font-size: 6.25rem;
+    font-weight: 500;
+}
+
+.error-subtitle {
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+.error-para {
+    font-size: 1rem;
+}
+
+.btn {
+    margin: 30px 0 0 0;
+    background: #E8308C;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+
+.img-container {
+    flex: 1;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    height: 90%;
+}
+
+.confused {
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    height: 25%;
+}
+
+.copyright-container {
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.copyright-image {
+    width: 18px;
+    margin: 0 2px 0 0;
+    filter: invert(1);
+}
+
+.copyright-text {
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1003px) {
+
+    section {
+        flex-direction: column;
+    }
+
+    .error-descr {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-container {
+        height: 30%;
+        /*margin: 20px 0 0 0;*/
+    }
+
+
+}
+
+@media screen and (max-width: 877px) {
+    .logo-container {
+        flex: 5;
+    }
+
+    nav {
+        flex: 8;
+    }
+
+    .search-container {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    .logo-title {
+        display: none;
+    }
+
+    .logo-container {
+        flex: 1;
+    }
+
+
+    nav {
+        flex: 8;
+    }
+
+    .search-container {
+        flex: 1;
+    }
+
+    .error-title {
+        font-size: 5rem;
+    }
+}
+
+
