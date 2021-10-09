@@ -150,7 +150,14 @@ section {
     }
 
     .img-container {
-        height: 40%;
+        height: 200px;
+    }
+
+    .confused {
+        height: 25%;
+        position: absolute;
+        left: 70%;
+        bottom: 0;
     }
 
     .logo-container {
